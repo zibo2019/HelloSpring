@@ -14,5 +14,6 @@ public class Test01 {
         StudentDao studentDao = context.getBean("studentDao", StudentDao.class);
         //3、使用对象
         studentDao.printName();
+        
     }
 }
