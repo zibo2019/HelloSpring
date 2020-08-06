@@ -1,5 +1,6 @@
 package com.zibo;
 
+import com.zibo.bean.StuBean;
 import com.zibo.dao.StudentDao;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -14,5 +15,14 @@ public class Test01 {
         StudentDao studentDao = context.getBean("studentDao", StudentDao.class);
         //3、使用对象
         studentDao.printName();
+    }
+    @Test
+    public void go1(){
+        //1、获取核心容器对象
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
+        //2、从容器获取类对象
+        StuBean stuBean = context.getBean("stuBean", StuBean.class);
+        //3、使用对象
+        stuBean.destroy();
     }
 }

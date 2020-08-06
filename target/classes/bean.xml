@@ -5,4 +5,5 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--将对象的创建交给Spring来管理-->
     <bean id="studentDao" class="com.zibo.dao.impl.StudentDaoImpl"/>
+    <bean id="stuBean" class="com.zibo.bean.StuBean"/>
 </beans>
