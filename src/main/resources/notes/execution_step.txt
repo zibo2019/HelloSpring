@@ -1,4 +1,0 @@
-Spring IOC容器的启动步骤：
-第一步：读取bean的xml配置文件，将每一个bean元素转化成BeanDefinition；
-第二步：通过BeanDefinitionRegistry将bean注册到beanFactory中；
-
